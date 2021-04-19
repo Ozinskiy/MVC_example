@@ -15,7 +15,6 @@ public class UserServiceImpl implements UserService{
         User user = userDao.getUserById(id);
         Util.markDeleted(user);
         userDao.createOrUpdate(user);
-
         return user;
     }
 
@@ -38,7 +37,6 @@ public class UserServiceImpl implements UserService{
                 result.add(user);
             }
         }
-
         return result;
     }
 
@@ -59,7 +57,6 @@ public class UserServiceImpl implements UserService{
                 result.add(user);
             }
         }
-
         return result;
     }
 
